@@ -17,6 +17,3 @@
 	<li><code>1 &lt;= nums.length &lt;= 10</code></li>
 	<li><code>-10 &lt;= nums[i] &lt;= 10</code></li>
 </ul>
-
-<h2>Diagram Logic</h2>
-<img width="13" height="18" alt="image" src="https://github.com/user-attachments/assets/046ae641-07b6-4712-b4c9-5edabc878546" />
