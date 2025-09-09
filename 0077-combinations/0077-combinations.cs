@@ -12,7 +12,7 @@ public class Solution {
         this.k = k;
         combinations = new List<IList<int>>();
         NaryCombination(new List<int>(), 1);
-        Print();
+        // Print();
         return combinations;
     }
 
