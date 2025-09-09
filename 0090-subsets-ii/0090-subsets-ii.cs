@@ -24,7 +24,9 @@ public class Solution {
             subsets.Add(new List<int>(subset));
             return;
         }
-        SubsetTree(new List<int>(subset) { nums[i] },i+1);
+        List<int> subset2 = new List<int>(subset);
+        subset2.Add(nums[i]);
+        SubsetTree(subset2,i+1);
         SubsetTree(subset, SkipDuplicates(i));
     }
 
