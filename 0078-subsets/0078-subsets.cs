@@ -18,14 +18,14 @@ public class Solution {
 
     // nums[i] is the current element to choose
     private void SubsetTree(List<int> subset, int i) {
+        // no more elements to add, subset completed.
         if (i==nums.Length) {
             subsets.Add(new List<int>(subset));
             return;
         }
 
         SubsetTree(subset,i+1);
-        subset = new List<int>(subset);
-        subset.Add(nums[i]);
-        SubsetTree(subset,i+1);
+        // avoid same subset across different branches
+        SubsetTree(new List<int>(subset) { nums[i] },i+1);
     }
 }
