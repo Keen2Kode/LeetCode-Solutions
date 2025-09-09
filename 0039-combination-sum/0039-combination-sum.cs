@@ -1,43 +1,27 @@
-public class Solution
-{
-    private int[] cand;
-    private List<IList<int>> res = new();
-    private int[] stack = new int[32]; // grows as needed
+public class Solution {
 
-    public IList<IList<int>> CombinationSum(int[] candidates, int target)
-    {
-        Array.Sort(candidates);        // enables early break
-        cand = candidates;
-        Dfs(0, target, 0);
-        return res;
+    private int[] nums;
+    private List<IList<int>> combinations = new List<IList<int>>();
+    public IList<IList<int>> CombinationSum(int[] candidates, int target) {
+        // Pre-sort (O(nlog(n))) is not as complex as combinations O(n*n^(target/smallest num))
+        Array.Sort(candidates);
+        nums = candidates;
+        NaryTree(new List<int>(), target, 0);
+        return combinations;
     }
 
-    // start: index into candidates
-    // remain: remaining target
-    // depth:  how many items currently in 'stack'
-    private void Dfs(int start, int remain, int depth)
-    {
-        if (remain == 0)
-        {
-            // copy once per solution (int[] implements IList<int>, so it's valid to store directly)
-            var ans = new int[depth];
-            Array.Copy(stack, ans, depth);
-            res.Add(ans);
+    // keep subtracting and adding subtracted value to combo
+    // only add larger or equal elements, to avoid duplicate combos
+    private void NaryTree(List<int> combination, int target, int start) {
+        if (target == 0) {
+            combinations.Add(combination);
+        }
+        if (target <= 0 || start == nums.Length)
             return;
+
+        for (int i=start; i<nums.Length; i++) {
+            NaryTree(new List<int>(combination) {nums[i]}, target-nums[i], i);
         }
 
-        // iterate remaining candidates; allow reuse by passing 'i' (not i+1)
-        for (int i = start; i < cand.Length; i++)
-        {
-            int v = cand[i];
-            if (v > remain) break;        // sorted prune
-
-            if (depth == stack.Length)    // grow stack if needed
-                Array.Resize(ref stack, stack.Length << 1);
-
-            stack[depth] = v;             // push
-            Dfs(i, remain - v, depth + 1);
-            // no pop needed; 'depth' controls logical length
-        }
     }
 }
