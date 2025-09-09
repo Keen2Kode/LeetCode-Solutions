@@ -14,14 +14,18 @@ public class Solution {
     // only add larger or equal elements, to avoid duplicate combos
     private void NaryTree(List<int> combination, int target, int start) {
         if (target == 0) {
-            combinations.Add(combination);
+            combinations.Add(new List<int>(combination));
         }
         if (target <= 0 || start == nums.Length)
             return;
 
-        for (int i=start; i<nums.Length; i++) {
-            NaryTree(new List<int>(combination) {nums[i]}, target-nums[i], i);
+        // once the target is lower than the sorted elements, no point going forward
+        for (int i = start; i < nums.Length && nums[i] <= target; i++) {
+            combination.Add(nums[i]);
+            NaryTree(combination, target - nums[i], i);
+            combination.RemoveAt(combination.Count - 1);
         }
+
 
     }
 }
