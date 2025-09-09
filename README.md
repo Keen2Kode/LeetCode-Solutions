@@ -1,5 +1,7 @@
 # LeetCode-Solutions
-A collection of LeetCode questions to ace the coding interview! - Created using [LeetHub v2](https://github.com/arunbhardwaj/LeetHub-2.0)
+A collection of LeetCode questions to ace the coding interview! - Created using [LeetHub v2](https://github.com/arunbhardwaj/LeetHub-2.0).
+
+[![LeetCode Stats](https://leetcard.jacoblin.cool/Keen2Kode?theme=dark&ext=heatmap)](https://leetcode.com/Keen2Kode/)
 
 <!---LeetCode Topics Start-->
 # LeetCode Topics
