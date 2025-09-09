@@ -32,7 +32,9 @@ public class Solution {
         // the "skipping" is in built in the for loop
         // eg: if startVal=3, cannot add 2 or 1
         for (int i=startVal; i<=upperBound; i++) {
-            NaryCombination(new List<int>(combination) {i}, i+1);
+            combination.Add(i);
+            NaryCombination(combination, i + 1);
+            combination.RemoveAt(combination.Count - 1);
         }
     }
 
