@@ -1,31 +1,43 @@
 public class Solution
 {
+    private int[] cand;
+    private List<IList<int>> res = new();
+    private int[] stack = new int[32]; // grows as needed
+
     public IList<IList<int>> CombinationSum(int[] candidates, int target)
     {
-        Array.Sort(candidates);
-        var res = new List<IList<int>>();
-        var cur = new List<int>();
+        Array.Sort(candidates);        // enables early break
+        cand = candidates;
+        Dfs(0, target, 0);
+        return res;
+    }
 
-        void Dfs(int start, int remain)
+    // start: index into candidates
+    // remain: remaining target
+    // depth:  how many items currently in 'stack'
+    private void Dfs(int start, int remain, int depth)
+    {
+        if (remain == 0)
         {
-            if (remain == 0)
-            {
-                res.Add(new List<int>(cur));
-                return;
-            }
-
-            for (int i = start; i < candidates.Length; i++)
-            {
-                int v = candidates[i];
-                if (v > remain) break;         // prune by sorted order
-
-                cur.Add(v);
-                Dfs(i, remain - v);            // i (not i+1) → unlimited reuse
-                cur.RemoveAt(cur.Count - 1);   // backtrack
-            }
+            // copy once per solution (int[] implements IList<int>, so it's valid to store directly)
+            var ans = new int[depth];
+            Array.Copy(stack, ans, depth);
+            res.Add(ans);
+            return;
         }
 
-        Dfs(0, target);
-        return res;
+        // iterate remaining candidates; allow reuse by passing 'i' (not i+1)
+        for (int i = start; i < cand.Length; i++)
+        {
+            int v = cand[i];
+            if (v > remain) break;        // sorted prune
+
+            if (depth == stack.Length)    // grow stack if needed
+                Array.Resize(ref stack, stack.Length << 1);
+
+            stack[depth] = v;             // push
+            Dfs(i, remain - v, depth + 1);
+            // no pop needed; 'depth' controls logical length
+        }
     }
 }
