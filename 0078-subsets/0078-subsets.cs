@@ -1,5 +1,6 @@
 public class Solution {
 
+
     private List<IList<int>> subsets = new List<IList<int>>();
     private int[] nums;
     public IList<IList<int>> Subsets(int[] nums) {
@@ -18,11 +19,10 @@ public class Solution {
     // nums[i] is the current element to choose
     private void SubsetTree(List<int> subset, int i) {
         if (i==nums.Length) {
-            subsets.Add(subset);
+            subsets.Add(new List<int>(subset));
             return;
         }
 
-        subset = new List<int>(subset);
         SubsetTree(subset,i+1);
         subset = new List<int>(subset);
         subset.Add(nums[i]);
