@@ -23,10 +23,15 @@ public class Solution {
             return;
         }
 
+        // eg: nums is [1,2,3,4,5,6,7] and currently at [1,2], and k=3
+        // no need to explore every element upto n
+        int need = k - combination.Count;
+        int upperBound = n - need + 1; 
+
         // n-ary tree
         // the "skipping" is in built in the for loop
         // eg: if startVal=3, cannot add 2 or 1
-        for (int i=startVal; i<=n; i++) {
+        for (int i=startVal; i<=upperBound; i++) {
             NaryCombination(new List<int>(combination) {i}, i+1);
         }
     }
@@ -36,4 +41,5 @@ public class Solution {
             Console.WriteLine(String.Join("->", combination));
         }
     }
+
 }
