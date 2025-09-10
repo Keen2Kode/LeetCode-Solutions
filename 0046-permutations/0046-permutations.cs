@@ -1,25 +1,31 @@
 public class Solution {
     private List<IList<int>> permutations = new List<IList<int>>();
+    private int[] nums;
     public IList<IList<int>> Permute(int[] nums) {
-
-        NaryTree(new LinkedList<int>(), nums.ToHashSet());
+        this.nums = nums;
+        NaryTree(new LinkedList<int>(), new HashSet<int>());
         return permutations;
     }
 
-    private void NaryTree(LinkedList<int> permutation, HashSet<int> nums) {
-        if (nums.Count == 0) {
+    private void NaryTree(LinkedList<int> permutation, HashSet<int> removed) {
+        bool removedAll = removed.Count == nums.Length;
+        if (removedAll) {
             permutations.Add(new List<int>(permutation));
             return;
         }
 
         // choosing an element means it can never be used in that perm again
         // so it must be removed for next time.
-        foreach (int num in nums.ToArray()) {
-            nums.Remove(num);
-            permutation.AddLast(num);
-            NaryTree(permutation, nums);
-            nums.Add(num);
-            permutation.RemoveLast();
+        // Removing from nums causes ConcurrentModificationException
+        // so why not ADD to a different list
+        foreach (int num in nums) {
+            if (!removed.Contains(num)) {
+                removed.Add(num);
+                permutation.AddLast(num);
+                NaryTree(permutation, removed);
+                permutation.RemoveLast();
+                removed.Remove(num);
+            }
 
         }
 
