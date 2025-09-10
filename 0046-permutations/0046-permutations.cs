@@ -3,11 +3,11 @@ public class Solution {
     private int[] nums;
     public IList<IList<int>> Permute(int[] nums) {
         this.nums = nums;
-        NaryTree(new LinkedList<int>(), new HashSet<int>());
+        NaryTree(new List<int>(), new HashSet<int>());
         return permutations;
     }
 
-    private void NaryTree(LinkedList<int> permutation, HashSet<int> removed) {
+    private void NaryTree(List<int> permutation, HashSet<int> removed) {
         bool removedAll = removed.Count == nums.Length;
         if (removedAll) {
             permutations.Add(new List<int>(permutation));
@@ -21,9 +21,9 @@ public class Solution {
         foreach (int num in nums) {
             if (!removed.Contains(num)) {
                 removed.Add(num);
-                permutation.AddLast(num);
+                permutation.Add(num);
                 NaryTree(permutation, removed);
-                permutation.RemoveLast();
+                permutation.RemoveAt(permutation.Count-1);
                 removed.Remove(num);
             }
 
