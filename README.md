@@ -17,6 +17,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Depth-First Search
 |  |
 | ------- |
+| [0079-word-search](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0079-word-search) |
 | [0124-binary-tree-maximum-path-sum](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0124-binary-tree-maximum-path-sum) |
 | [0257-binary-tree-paths](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0257-binary-tree-paths) |
 ## Binary Tree
@@ -27,6 +28,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## String
 |  |
 | ------- |
+| [0079-word-search](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0079-word-search) |
 | [0257-binary-tree-paths](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0257-binary-tree-paths) |
 ## Backtracking
 |  |
@@ -35,6 +37,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0046-permutations](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0046-permutations) |
 | [0077-combinations](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0077-combinations) |
 | [0078-subsets](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0078-subsets) |
+| [0079-word-search](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0079-word-search) |
 | [0090-subsets-ii](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0090-subsets-ii) |
 | [0257-binary-tree-paths](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0257-binary-tree-paths) |
 ## Array
@@ -43,10 +46,15 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0039-combination-sum](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0039-combination-sum) |
 | [0046-permutations](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0046-permutations) |
 | [0078-subsets](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0078-subsets) |
+| [0079-word-search](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0079-word-search) |
 | [0090-subsets-ii](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0090-subsets-ii) |
 ## Bit Manipulation
 |  |
 | ------- |
 | [0078-subsets](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0078-subsets) |
 | [0090-subsets-ii](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0090-subsets-ii) |
+## Matrix
+|  |
+| ------- |
+| [0079-word-search](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0079-word-search) |
 <!---LeetCode Topics End-->
