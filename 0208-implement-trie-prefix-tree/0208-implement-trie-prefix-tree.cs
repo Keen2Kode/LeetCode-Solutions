@@ -24,13 +24,14 @@ public class Trie {
             node.isEnd = true;
             return;
         }
-        
         Insert(GetNextInsert(node, word[i]), word, i+1);
-
     }
 
     private Node GetNextInsert(Node node, char c) {
-        Node next = GetNext(node, c) ?? new Node();
+        Node next = GetNext(node, c);
+        if (next != null)
+            return next;
+        next = new Node();
         next.val = c;
         node.next.Add(next);
         return next;
