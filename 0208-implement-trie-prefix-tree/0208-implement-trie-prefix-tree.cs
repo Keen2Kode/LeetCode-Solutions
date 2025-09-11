@@ -27,15 +27,12 @@ public class Trie {
         Insert(GetNextInsert(node, word[i]), word, i+1);
     }
 
-    private Node GetNextInsert(Node node, char c) {
-        Node next = GetNext(node, c);
-        if (next != null)
-            return next;
-        next = new Node();
-        next.val = c;
-        node.next.Add(next);
-        return next;
+    private Node GetNextInsert(Node node, char c)
+    {
+        node.next[c] = node.next.GetValueOrDefault(c) ?? new Node();
+        return node.next[c];
     }
+
 
     private bool Search(Node node, string word, int i, bool prefixSearch) {
         if (node == null)
@@ -43,21 +40,13 @@ public class Trie {
         if (i==word.Length) {
             return node.isEnd || prefixSearch;
         }
-        return Search(GetNext(node, word[i]), word, i+1, prefixSearch);
+        return Search(node.next.GetValueOrDefault(word[i]), word, i+1, prefixSearch);
     }
 
-    private Node GetNext(Node node, char c) {
-        foreach (Node next in node.next) {
-            if (next.val == c)
-                return next;
-        }
-        return null;
-    }
 }
 
 public class Node {
-    public List<Node> next = new List<Node>();
-    public char val;
+    public Dictionary<char, Node> next = new Dictionary<char, Node>();
     public bool isEnd = false;
 }
 
