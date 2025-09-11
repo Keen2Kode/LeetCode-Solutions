@@ -13,15 +13,8 @@ public class WordDictionary {
                 return;
             }
 
-            Node next;
-            if (node.Children.ContainsKey(word[i])) {
-                next = node.Children[word[i]];
-            } 
-            else {
-                next = new Node();
-                node.Children[word[i]] = next;
-            }
-            Insert(next, word, i+1);
+            node.Children[word[i]] = node.Children.GetValueOrDefault(word[i], new Node());
+            Insert(node.Children[word[i]], word, i+1);
         }
 
         Insert(root, word, 0);
@@ -41,11 +34,7 @@ public class WordDictionary {
                 return Search(node.Children.GetValueOrDefault(word[i]), word, i+1);
 
             // when searching for ., search EVERY node
-            foreach (Node next in node.Children.Values) {
-                if (Search(next, word, i+1))
-                    return true;
-            }
-            return false;
+            return node.Children.Values.Any((next) => Search(next, word, i+1));
         }
         return Search(root, word, 0);
     }
