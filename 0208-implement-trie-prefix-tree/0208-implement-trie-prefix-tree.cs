@@ -8,52 +8,49 @@ public class Trie {
     public void Insert(string word) {
         Insert(root, word, 0);
     }
+    
+    public bool Search(string word) {
+        return Search(root, word, 0, false);
+    }
+    
+    public bool StartsWith(string prefix) {
+        return Search(root, prefix, 0, true);
+    }
+
+
 
     private void Insert(Node node, string word, int i) {
         if (i==word.Length) {
             node.isEnd = true;
             return;
         }
-        Insert(getNext(node, word[i]), word, i+1);
+        
+        Insert(GetNextInsert(node, word[i]), word, i+1);
 
     }
 
-    private Node getNext(Node node, char c) {
-        foreach (Node next in node.next) {
-            if (next.val == c)
-                return next;
-        }
-        Node toAdd = new Node();
-        toAdd.val = c;
-        node.next.Add(toAdd);
-        return toAdd;
-    }
-    
-    public bool Search(string word) {
-        return Search(root, word, 0, false);
+    private Node GetNextInsert(Node node, char c) {
+        Node next = GetNext(node, c) ?? new Node();
+        next.val = c;
+        node.next.Add(next);
+        return next;
     }
 
     private bool Search(Node node, string word, int i, bool prefixSearch) {
         if (node == null)
             return false;
         if (i==word.Length) {
-            if (node.isEnd || prefixSearch)
-                return true;
-            return false;
+            return node.isEnd || prefixSearch;
         }
-        return Search(GetNextSearch(node, word[i]), word, i+1, prefixSearch);
+        return Search(GetNext(node, word[i]), word, i+1, prefixSearch);
     }
 
-    private Node GetNextSearch(Node node, char c) {
+    private Node GetNext(Node node, char c) {
         foreach (Node next in node.next) {
             if (next.val == c)
                 return next;
         }
         return null;
-    }
-    
-    public bool StartsWith(string prefix) {
-        return Search(root, prefix, 0, true);
     }
 }
 
