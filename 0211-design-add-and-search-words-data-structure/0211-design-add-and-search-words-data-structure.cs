@@ -34,7 +34,11 @@ public class WordDictionary {
                 return Search(node.Children.GetValueOrDefault(word[i]), word, i+1);
 
             // when searching for ., search EVERY node
-            return node.Children.Values.Any((next) => Search(next, word, i+1));
+            foreach (Node next in node.Children.Values) {
+                if (Search(next, word, i+1))
+                    return true;
+            }
+            return false;
         }
         return Search(root, word, 0);
     }
