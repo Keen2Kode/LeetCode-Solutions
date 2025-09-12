@@ -13,6 +13,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0124-binary-tree-maximum-path-sum](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0124-binary-tree-maximum-path-sum) |
+| [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0257-binary-tree-paths](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0257-binary-tree-paths) |
 ## Depth-First Search
 |  |
@@ -20,11 +21,13 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0079-word-search](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0079-word-search) |
 | [0124-binary-tree-maximum-path-sum](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0124-binary-tree-maximum-path-sum) |
 | [0211-design-add-and-search-words-data-structure](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0211-design-add-and-search-words-data-structure) |
+| [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0257-binary-tree-paths](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0257-binary-tree-paths) |
 ## Binary Tree
 |  |
 | ------- |
 | [0124-binary-tree-maximum-path-sum](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0124-binary-tree-maximum-path-sum) |
+| [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0257-binary-tree-paths](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0257-binary-tree-paths) |
 ## String
 |  |
@@ -86,4 +89,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0208-implement-trie-prefix-tree](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0208-implement-trie-prefix-tree) |
 | [0211-design-add-and-search-words-data-structure](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0211-design-add-and-search-words-data-structure) |
 | [0212-word-search-ii](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0212-word-search-ii) |
+## Binary Search Tree
+|  |
+| ------- |
+| [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 <!---LeetCode Topics End-->
