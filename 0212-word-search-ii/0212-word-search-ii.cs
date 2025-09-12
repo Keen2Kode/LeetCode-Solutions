@@ -106,58 +106,39 @@ public class Solution {
 
         // word search 2 we're searching for the entire trie during our dfs
         // add more words as we reach those trie nodes
-public List<string> Search(Trie trie) {
-    HashSet<string> words = new();
+        public List<string> Search(Trie trie) {
+            HashSet<string> words = new();
 
-    for (int i = 0; i < ROWS; i++) {
-        for (int j = 0; j < COLS; j++) {
-            Search(i, j, "", trie.root, new bool[ROWS, COLS], null, '\0');
+            for (int i=0; i<ROWS; i++) {
+                for (int j=0; j<COLS; j++) {
+                    Search(i, j, "", trie.root, new bool[ROWS,COLS]);
+                }
+            }
+            return words.ToList();
+
+            void Search(int i, int j, string builtWord, Trie.Node node, bool[,] visited) {
+                if (OutOfBounds(i, j))
+                    return;
+                if (visited[i, j])
+                    return;
+
+                char c = board[i][j];
+                Trie.Node next = node.Children.GetValueOrDefault(c);
+                if (next == null)
+                    return;
+
+                if (next.WordEnd) {
+                    words.Add(builtWord + c);
+                }
+
+                visited[i, j] = true;
+                foreach ((int a, int b) in Neighbours(i, j)) {
+                    Search(a, b, builtWord + c, next, visited);
+                }
+                visited[i, j] = false;
+            }
+
         }
-    }
-    return words.ToList();
-
-    void Search(int i, int j, string builtWord, Trie.Node node,
-                bool[,] visited, Trie.Node lastBranchNode, char lastBranchEdge) 
-    {
-        if (node == null)
-            return;
-        if (OutOfBounds(i, j))
-            return;
-        if (visited[i, j])
-            return;
-
-        char c = board[i][j];
-        Trie.Node next = node.Children.GetValueOrDefault(c);
-        if (next == null)
-            return;
-
-        string newWord = builtWord + c;
-        if (next.WordEnd) {
-            words.Add(newWord);
-            next.WordEnd = false; // avoid duplicates
-        }
-
-        // update last branching point if current node is a branch or word end
-        Trie.Node newLastBranchNode = lastBranchNode;
-        char newLastBranchEdge = lastBranchEdge;
-        if (node.WordEnd || node.Children.Count > 1) {
-            newLastBranchNode = node;
-            newLastBranchEdge = c;
-        }
-
-        visited[i, j] = true;
-        foreach ((int a, int b) in Neighbours(i, j)) {
-            Search(a, b, newWord, next, visited, newLastBranchNode, newLastBranchEdge);
-        }
-        visited[i, j] = false;
-
-        // prune if this path is now useless
-        if (!next.WordEnd && next.Children.Count == 0 && newLastBranchNode != null) {
-            newLastBranchNode.Children.Remove(newLastBranchEdge);
-        }
-    }
-}
-
 
 
 
