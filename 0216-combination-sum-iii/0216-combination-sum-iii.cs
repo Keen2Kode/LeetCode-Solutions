@@ -6,8 +6,8 @@ public class Solution {
 
     public IList<IList<int>> CombinationSum3(int k, int n) {
         this.k = k;
-        // if (lowestSum(k) > n)
-        //     return combinations;
+        if (lowestSum(k) > n)
+            return combinations;
         
         NaryTree(new List<int>(), MIN, n);
         return combinations;
