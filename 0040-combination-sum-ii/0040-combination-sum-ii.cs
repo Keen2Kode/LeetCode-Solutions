@@ -24,7 +24,8 @@ public class Solution {
         // once the target is lower than the sorted elements, no point going forward
         for (int i = start; i < nums.Length && nums[i] <= target; i++) {
             // skip the duplicate branch at the current level
-            if (i-1 >= start && nums[i] == nums[i-1])
+            bool duplicate = i-1 >= start && nums[i] == nums[i-1];
+            if (duplicate)
                 continue;
             combination.Add(nums[i]);
             NaryTree(combination, target - nums[i], i+1);
