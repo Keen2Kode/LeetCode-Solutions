@@ -66,6 +66,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0216-combination-sum-iii](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0216-combination-sum-iii) |
 | [0283-move-zeroes](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0283-move-zeroes) |
 | [0645-set-mismatch](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0645-set-mismatch) |
+| [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
 ## Bit Manipulation
 |  |
 | ------- |
@@ -83,6 +84,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0017-letter-combinations-of-a-phone-number](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0017-letter-combinations-of-a-phone-number) |
 | [0208-implement-trie-prefix-tree](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0208-implement-trie-prefix-tree) |
 | [0645-set-mismatch](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0645-set-mismatch) |
+| [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
 ## Design
 |  |
 | ------- |
@@ -111,4 +113,9 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0645-set-mismatch](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0645-set-mismatch) |
+| [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
+## Counting Sort
+|  |
+| ------- |
+| [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
 <!---LeetCode Topics End-->
