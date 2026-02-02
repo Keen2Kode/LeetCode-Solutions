@@ -34,7 +34,7 @@ public class Solution {
             int function = int.Parse(logArray[0]);
             bool isEnd = logArray[1].Contains("end");
             int timestamp = int.Parse(logArray[2]);
-            Console.WriteLine($"function: {function}, isEnd: {isEnd}, timestamp: {timestamp}");
+            // Console.WriteLine($"function: {function}, isEnd: {isEnd}, timestamp: {timestamp}");
 
 
             // bug if first timestamp is 1, as tPrev would be 0, aka incorrect first duration
