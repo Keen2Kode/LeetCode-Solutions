@@ -29,23 +29,22 @@ public class Solution {
         }
         for (int i=0; i<logs.Count; i++) {
             
-            Log log = new Log(logs[i]);
-            // string log = logs[i];
-            // string[] logArray = log.Split(":");
-            // int function = int.Parse(logArray[0]);
-            // bool isEnd = logArray[1].Contains("end");
-            // int timestamp = int.Parse(logArray[2]);
+            string log = logs[i];
+            string[] logArray = log.Split(":");
+            int function = int.Parse(logArray[0]);
+            bool isEnd = logArray[1].Contains("end");
+            int timestamp = int.Parse(logArray[2]);
             // Console.WriteLine($"function: {function}, isEnd: {isEnd}, timestamp: {timestamp}");
 
 
             // bug if first timestamp is 1, as tPrev would be 0, aka incorrect first duration
             // so initialize
-            t = log.Timestamp;
+            t = timestamp;
             if (i==0) {
-                tPrev = log.Timestamp;
+                tPrev = timestamp;
             }
             // remember duration of timestamp end 5 == timestamp start 6
-            if (log.IsEnd)
+            if (isEnd)
                 t++;
 
             // can't just call the "function" at this timestamp
@@ -54,11 +53,11 @@ public class Solution {
                 functionTimes[stack.Peek()] += t-tPrev;
             }
 
-            if (log.IsEnd) {
+            if (isEnd) {
                 stack.Pop();
             }
             else {
-                stack.Push(log.Function);
+                stack.Push(function);
                 
             }
 
@@ -69,17 +68,18 @@ public class Solution {
         return functionTimes;
     }
 
-    public class Log {
+    // if efficiency didn't drop, we can use a class
+    // public class Log {
 
-        public int Function {get; set;}
-        public bool IsEnd {get; set;}
-        public int Timestamp {get; set;}
-        public Log(string log) {
-            string[] logArray = log.Split(":");
-            this.Function = int.Parse(logArray[0]);
-            this.IsEnd = logArray[1].Contains("end");
-            this.Timestamp = int.Parse(logArray[2]);
-            // Console.WriteLine($"function: {function}, isEnd: {isEnd}, timestamp: {timestamp}");
-        }
-    }
+    //     public int Function {get; set;}
+    //     public bool IsEnd {get; set;}
+    //     public int Timestamp {get; set;}
+    //     public Log(string log) {
+    //         string[] logArray = log.Split(":");
+    //         this.Function = int.Parse(logArray[0]);
+    //         this.IsEnd = logArray[1].Contains("end");
+    //         this.Timestamp = int.Parse(logArray[2]);
+    //         // Console.WriteLine($"function: {function}, isEnd: {isEnd}, timestamp: {timestamp}");
+    //     }
+    // }
 }
