@@ -85,6 +85,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0017-letter-combinations-of-a-phone-number) |
+| [0202-happy-number](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0202-happy-number) |
 | [0208-implement-trie-prefix-tree](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0208-implement-trie-prefix-tree) |
 | [0448-find-all-numbers-disappeared-in-an-array](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0448-find-all-numbers-disappeared-in-an-array) |
 | [0645-set-mismatch](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0645-set-mismatch) |
@@ -107,6 +108,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Two Pointers
 |  |
 | ------- |
+| [0202-happy-number](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0202-happy-number) |
 | [0283-move-zeroes](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0283-move-zeroes) |
 | [0680-valid-palindrome-ii](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0680-valid-palindrome-ii) |
 ## Greedy
@@ -131,4 +133,5 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0150-evaluate-reverse-polish-notation](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0150-evaluate-reverse-polish-notation) |
+| [0202-happy-number](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0202-happy-number) |
 <!---LeetCode Topics End-->
