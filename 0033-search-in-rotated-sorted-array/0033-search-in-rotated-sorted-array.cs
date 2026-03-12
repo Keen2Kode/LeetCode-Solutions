@@ -17,24 +17,21 @@ public class Solution {
 
             if (b == target)
                 return m;
-            // left continuous
-            else if (a<=b) {
-                if (a<=target && target<=b) {
-                    j=m-1;
-                }
-                else {
-                    i=m+1;
-                }
+
+            bool searchLeft;
+
+            if (a<=b) { // left side sorted
+                searchLeft = a <= target && target < b;
             }
-            // right continuous
-            else if (b<=c) {
-                if (b<=target && target<=c) {
-                    i=m+1;
-                }
-                else {
-                    j=m-1;
-                }
+            else if (b<=c) { // right side sorted
+                searchLeft = !(b < target && target <= c);
             }
+            else throw new Exception("How did you even get here");
+
+            if (searchLeft)
+                j = m - 1;
+            else
+                i = m + 1;
         }
         return -1;
     }
