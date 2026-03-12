@@ -56,6 +56,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [0033-search-in-rotated-sorted-array](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0033-search-in-rotated-sorted-array) |
 | [0039-combination-sum](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0039-combination-sum) |
 | [0040-combination-sum-ii](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0040-combination-sum-ii) |
 | [0046-permutations](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0046-permutations) |
@@ -107,6 +108,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Binary Search Tree
 |  |
 | ------- |
+| [0033-search-in-rotated-sorted-array](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0033-search-in-rotated-sorted-array) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0704-binary-search](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0704-binary-search) |
