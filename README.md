@@ -113,12 +113,14 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0209-minimum-size-subarray-sum](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0209-minimum-size-subarray-sum) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
+| [0633-sum-of-square-numbers](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0633-sum-of-square-numbers) |
 | [0704-binary-search](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0704-binary-search) |
 ## Two Pointers
 |  |
 | ------- |
 | [0202-happy-number](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0202-happy-number) |
 | [0283-move-zeroes](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0283-move-zeroes) |
+| [0633-sum-of-square-numbers](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0633-sum-of-square-numbers) |
 | [0680-valid-palindrome-ii](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0680-valid-palindrome-ii) |
 ## Greedy
 |  |
@@ -145,6 +147,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0150-evaluate-reverse-polish-notation](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0202-happy-number](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0202-happy-number) |
+| [0633-sum-of-square-numbers](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0633-sum-of-square-numbers) |
 ## Monotonic Stack
 |  |
 | ------- |
