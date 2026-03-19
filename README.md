@@ -20,6 +20,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0079-word-search](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0079-word-search) |
 | [0124-binary-tree-maximum-path-sum](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0124-binary-tree-maximum-path-sum) |
+| [0200-number-of-islands](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0200-number-of-islands) |
 | [0211-design-add-and-search-words-data-structure](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0211-design-add-and-search-words-data-structure) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0257-binary-tree-paths](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0257-binary-tree-paths) |
@@ -65,6 +66,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0090-subsets-ii](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0090-subsets-ii) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0153-find-minimum-in-rotated-sorted-array) |
+| [0200-number-of-islands](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0200-number-of-islands) |
 | [0209-minimum-size-subarray-sum](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0209-minimum-size-subarray-sum) |
 | [0212-word-search-ii](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0212-word-search-ii) |
 | [0216-combination-sum-iii](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0216-combination-sum-iii) |
@@ -85,6 +87,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0079-word-search](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0079-word-search) |
+| [0200-number-of-islands](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0200-number-of-islands) |
 | [0212-word-search-ii](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0212-word-search-ii) |
 ## Hash Table
 |  |
@@ -160,4 +163,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0209-minimum-size-subarray-sum](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0209-minimum-size-subarray-sum) |
+## Breadth-First Search
+|  |
+| ------- |
+| [0200-number-of-islands](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0200-number-of-islands) |
+## Union-Find
+|  |
+| ------- |
+| [0200-number-of-islands](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0200-number-of-islands) |
 <!---LeetCode Topics End-->
