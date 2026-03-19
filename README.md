@@ -24,6 +24,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0211-design-add-and-search-words-data-structure](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0211-design-add-and-search-words-data-structure) |
 | [0235-lowest-common-ancestor-of-a-binary-search-tree](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0235-lowest-common-ancestor-of-a-binary-search-tree) |
 | [0257-binary-tree-paths](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0257-binary-tree-paths) |
+| [0695-max-area-of-island](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0695-max-area-of-island) |
 ## Binary Tree
 |  |
 | ------- |
@@ -74,6 +75,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0448-find-all-numbers-disappeared-in-an-array](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0448-find-all-numbers-disappeared-in-an-array) |
 | [0636-exclusive-time-of-functions](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0636-exclusive-time-of-functions) |
 | [0645-set-mismatch](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0645-set-mismatch) |
+| [0695-max-area-of-island](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0695-max-area-of-island) |
 | [0704-binary-search](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0704-binary-search) |
 | [0853-car-fleet](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0853-car-fleet) |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
@@ -89,6 +91,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0079-word-search](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0079-word-search) |
 | [0200-number-of-islands](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0200-number-of-islands) |
 | [0212-word-search-ii](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0212-word-search-ii) |
+| [0695-max-area-of-island](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0695-max-area-of-island) |
 ## Hash Table
 |  |
 | ------- |
@@ -167,8 +170,10 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0200-number-of-islands](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0200-number-of-islands) |
+| [0695-max-area-of-island](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0695-max-area-of-island) |
 ## Union-Find
 |  |
 | ------- |
 | [0200-number-of-islands](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0200-number-of-islands) |
+| [0695-max-area-of-island](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0695-max-area-of-island) |
 <!---LeetCode Topics End-->
