@@ -1,9 +1,10 @@
 public class Solution {
 
-    private int count = 0;
+    private int area = 0;
     public int MaxAreaOfIsland(int[][] grid) {
         // similar approach to 622: counting islands
         // DFS search each island
+        // only real difference is counting area, I did it by storing the count as a variable
         int maxArea = 0;
 
         bool[,] visited = new bool[grid.Length, grid[0].Length];
@@ -14,8 +15,8 @@ public class Solution {
                 bool newIsland = grid[row][col] == 1 && !visited[row,col];
                 if (newIsland) {
                     CountAreaDFS(row, col, visited, grid);
-                    maxArea = Math.Max(count, maxArea);
-                    count = 0;
+                    maxArea = Math.Max(area, maxArea);
+                    area = 0;
                 }
             }
         }
@@ -26,7 +27,7 @@ public class Solution {
     private void CountAreaDFS(int row, int col, bool[,] visited, int[][] grid) {
         if (ValidCell(row, col, visited, grid)) {
             visited[row,col] = true;
-            count++;
+            area++;
             CountAreaDFS(row+1, col, visited, grid);
             CountAreaDFS(row-1, col, visited, grid);
             CountAreaDFS(row, col+1, visited, grid);
