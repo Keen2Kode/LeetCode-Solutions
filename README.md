@@ -78,6 +78,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0695-max-area-of-island](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0695-max-area-of-island) |
 | [0704-binary-search](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0704-binary-search) |
 | [0853-car-fleet](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0853-car-fleet) |
+| [0994-rotting-oranges](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0994-rotting-oranges) |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
 ## Bit Manipulation
 |  |
@@ -92,6 +93,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0200-number-of-islands](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0200-number-of-islands) |
 | [0212-word-search-ii](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0212-word-search-ii) |
 | [0695-max-area-of-island](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0695-max-area-of-island) |
+| [0994-rotting-oranges](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0994-rotting-oranges) |
 ## Hash Table
 |  |
 | ------- |
@@ -171,6 +173,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0200-number-of-islands](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0200-number-of-islands) |
 | [0695-max-area-of-island](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0695-max-area-of-island) |
+| [0994-rotting-oranges](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0994-rotting-oranges) |
 ## Union-Find
 |  |
 | ------- |
