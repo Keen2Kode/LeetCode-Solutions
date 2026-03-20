@@ -8,6 +8,8 @@ public class Solution {
         // RO list acts as our visited/to be visited list
 
 
+
+
         int minutes = 0;
         // create list of rotting orange (RO) sources
         // almost like a visited list
@@ -34,7 +36,7 @@ public class Solution {
             
                 
             // Go through non-rotting orange neighbours (NROs)
-            foreach ((int r, int c) in ValidOrangeNeighbours(i,j,grid)) {
+            foreach ((int r, int c) in FreshOrangeNeighbours(i,j,grid)) {
                 if (grid[r][c] == 1) {
                     // make rotten
                     // add to RO list
@@ -57,7 +59,7 @@ public class Solution {
         return rottingSources;
     }
 
-    private List<(int, int)> ValidOrangeNeighbours(int i, int j, int[][] grid) {
+    private List<(int, int)> FreshOrangeNeighbours(int i, int j, int[][] grid) {
         List<(int, int)> neighbours = new();
         foreach ((int r, int c) in new (int, int)[] {(i+1,j), (i-1,j), (i,j+1), (i,j-1)}) {
             if (r >= 0 && r < grid.Length && 
