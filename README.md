@@ -83,6 +83,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0704-binary-search](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0704-binary-search) |
 | [0853-car-fleet](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0853-car-fleet) |
 | [0994-rotting-oranges](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0994-rotting-oranges) |
+| [1046-last-stone-weight](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/1046-last-stone-weight) |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
 ## Bit Manipulation
 |  |
@@ -191,6 +192,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0703-kth-largest-element-in-a-stream](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0703-kth-largest-element-in-a-stream) |
+| [1046-last-stone-weight](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/1046-last-stone-weight) |
 ## Data Stream
 |  |
 | ------- |
