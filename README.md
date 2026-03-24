@@ -82,6 +82,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0695-max-area-of-island](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0695-max-area-of-island) |
 | [0704-binary-search](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0704-binary-search) |
 | [0853-car-fleet](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0853-car-fleet) |
+| [0973-k-closest-points-to-origin](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0973-k-closest-points-to-origin) |
 | [0994-rotting-oranges](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0994-rotting-oranges) |
 | [1046-last-stone-weight](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/1046-last-stone-weight) |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
@@ -147,6 +148,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0645-set-mismatch](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0645-set-mismatch) |
 | [0853-car-fleet](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0853-car-fleet) |
+| [0973-k-closest-points-to-origin](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0973-k-closest-points-to-origin) |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
 ## Counting Sort
 |  |
@@ -164,6 +166,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0150-evaluate-reverse-polish-notation](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0202-happy-number](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0202-happy-number) |
 | [0633-sum-of-square-numbers](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0633-sum-of-square-numbers) |
+| [0973-k-closest-points-to-origin](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0973-k-closest-points-to-origin) |
 ## Monotonic Stack
 |  |
 | ------- |
@@ -192,9 +195,22 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0703-kth-largest-element-in-a-stream](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0703-kth-largest-element-in-a-stream) |
+| [0973-k-closest-points-to-origin](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0973-k-closest-points-to-origin) |
 | [1046-last-stone-weight](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/1046-last-stone-weight) |
 ## Data Stream
 |  |
 | ------- |
 | [0703-kth-largest-element-in-a-stream](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0703-kth-largest-element-in-a-stream) |
+## Divide and Conquer
+|  |
+| ------- |
+| [0973-k-closest-points-to-origin](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0973-k-closest-points-to-origin) |
+## Geometry
+|  |
+| ------- |
+| [0973-k-closest-points-to-origin](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0973-k-closest-points-to-origin) |
+## Quickselect
+|  |
+| ------- |
+| [0973-k-closest-points-to-origin](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0973-k-closest-points-to-origin) |
 <!---LeetCode Topics End-->
