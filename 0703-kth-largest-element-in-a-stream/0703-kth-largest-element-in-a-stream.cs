@@ -22,7 +22,7 @@ public class KthLargest {
             RemoveMin(queueTillK);
         }
 
-        PrintQueue(queueTillK);
+        // PrintQueue(queueTillK);
 
 
 
