@@ -38,6 +38,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0017-letter-combinations-of-a-phone-number) |
+| [0049-group-anagrams](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0049-group-anagrams) |
 | [0079-word-search](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0079-word-search) |
 | [0208-implement-trie-prefix-tree](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0208-implement-trie-prefix-tree) |
 | [0211-design-add-and-search-words-data-structure](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0211-design-add-and-search-words-data-structure) |
@@ -65,6 +66,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0039-combination-sum](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0039-combination-sum) |
 | [0040-combination-sum-ii](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0040-combination-sum-ii) |
 | [0046-permutations](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0046-permutations) |
+| [0049-group-anagrams](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0049-group-anagrams) |
 | [0078-subsets](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0078-subsets) |
 | [0079-word-search](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0079-word-search) |
 | [0090-subsets-ii](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0090-subsets-ii) |
@@ -106,6 +108,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0017-letter-combinations-of-a-phone-number](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0017-letter-combinations-of-a-phone-number) |
+| [0049-group-anagrams](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0049-group-anagrams) |
 | [0202-happy-number](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0202-happy-number) |
 | [0208-implement-trie-prefix-tree](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0208-implement-trie-prefix-tree) |
 | [0448-find-all-numbers-disappeared-in-an-array](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0448-find-all-numbers-disappeared-in-an-array) |
@@ -147,6 +150,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Sorting
 |  |
 | ------- |
+| [0049-group-anagrams](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0049-group-anagrams) |
 | [0215-kth-largest-element-in-an-array](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0215-kth-largest-element-in-an-array) |
 | [0645-set-mismatch](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0645-set-mismatch) |
 | [0853-car-fleet](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0853-car-fleet) |
