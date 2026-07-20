@@ -8,20 +8,15 @@ public class Solution {
         // for each letter, keep start and end index
         // a: 0,10
         // b: 1,9
-        Dictionary<char, int[]> ranges = new();
+        Dictionary<char, int> ranges = new();
         for (int i=0;i<s.Length; i++) {
             char c = s[i];
-            // identify start
-            if (!ranges.ContainsKey(c))
-                ranges[c] = new int[] {i,i};
-            else {
-                ranges[c][1] = i;
-            }
+            ranges[c] = i;
         }
 
-        foreach (var pair in ranges) {
-            Console.WriteLine($"key: {pair.Key}, Value: {string.Join(',', pair.Value)}");
-        }
+        // foreach (var pair in ranges) {
+        //     Console.WriteLine($"key: {pair.Key}, Value: {string.Join(',', pair.Value)}");
+        // }
 
         List<int> partitions = new();
         // track present chars at each index
@@ -35,9 +30,9 @@ public class Solution {
             charsPresent.Add(c);
             partitionSize++;
 
-            Console.WriteLine($"i: {i}, c: {c}, charsPresent: {string.Join(",", charsPresent)} partitionSize: {partitionSize}");
+            // Console.WriteLine($"i: {i}, c: {c}, charsPresent: {string.Join(",", charsPresent)} partitionSize: {partitionSize}");
             // remove ended chars from charsPresent
-            int endIndex = ranges[c][1];
+            int endIndex = ranges[c];
             if (i == endIndex)
                 charsPresent.Remove(c);
             
