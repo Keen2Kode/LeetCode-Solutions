@@ -120,6 +120,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0208-implement-trie-prefix-tree](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0208-implement-trie-prefix-tree) |
 | [0211-design-add-and-search-words-data-structure](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0211-design-add-and-search-words-data-structure) |
 | [0703-kth-largest-element-in-a-stream](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0703-kth-largest-element-in-a-stream) |
+| [0933-number-of-recent-calls](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0933-number-of-recent-calls) |
 ## Trie
 |  |
 | ------- |
@@ -208,6 +209,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0703-kth-largest-element-in-a-stream](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0703-kth-largest-element-in-a-stream) |
+| [0933-number-of-recent-calls](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0933-number-of-recent-calls) |
 ## Divide and Conquer
 |  |
 | ------- |
@@ -222,4 +224,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0215-kth-largest-element-in-an-array](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0215-kth-largest-element-in-an-array) |
 | [0973-k-closest-points-to-origin](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0973-k-closest-points-to-origin) |
+## Queue
+|  |
+| ------- |
+| [0933-number-of-recent-calls](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0933-number-of-recent-calls) |
 <!---LeetCode Topics End-->
