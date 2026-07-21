@@ -27,7 +27,7 @@ public class Solution {
         
     }
     private static int CompareLetterLogs(string a, string b) {
-        Console.WriteLine($"Comparing a: {a}, to b: {b}");
+        // Console.WriteLine($"Comparing a: {a}, to b: {b}");
         string[] arrayA = a.Split(" ", 2);
         string[] arrayB = b.Split(" ", 2);
         
