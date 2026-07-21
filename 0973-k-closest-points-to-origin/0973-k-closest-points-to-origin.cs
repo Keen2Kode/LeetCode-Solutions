@@ -1,84 +1,42 @@
 public class Solution {
     public int[][] KClosest(int[][] points, int k) {
 
-        // naive approach
-        // sort all the points distances, tracking their indices
-        // complexity: 
-        // each insert: O(nlogn) (due to sorting each time)
-        // each removal past k elements: O(1)
-        // total O(k*n log n) - k elements at any point of time
-        // final return O(1)
-
-        // Min Heap approach
-        // complexity: 
-        // each insert (log n)
-        // WE CAN'T REMOVE past k elements - we don't know the max
-        // total O(n log n)
-        // final return (log n)
-
-        // Advanced Min heap approach
-        // 1. Use max heap
-        // 2. No need for a min heap, because we can return in ANY order
-        // complexity:
-        // each insert and removal (log n)
-        // total O(k log n) - no need to return in order
-
-        // create a priority queue with points distances
-        PriorityQueue<int, double> maxHeapIndices = new();
-
-        // add each points index prioritized by distance 
-        // but start removing at k elements
-        // REMEMBER k is min
+        // first solution: smart sort
+        // store array of point index + distance
+        // eg: [1, 4], [2, 10], [3, 3]
+        // 2 options:
+        // sort at the end
+        // array length = n (points)
+        // sorting = O(nlogn)
+        // OR sort each round, removing additional points
+        // each round sort = O(k log k)
+        // full sorting O(n*k log k)
+        List<int[]> distances = new();
         for (int i=0; i<points.Length; i++) {
             int x = points[i][0];
             int y = points[i][1];
-            double distance = Distance(x,y);
-
-            // Console.WriteLine($"x: {x}, y: {y}, distance: {distance}");
-            AddAndStoreMax(maxHeapIndices, i, Distance(x,y));
-
-            if (maxHeapIndices.Count > k && maxHeapIndices.Count > 0) {
-                RemoveMax(maxHeapIndices);
-            }
-            // PrintHeap(maxHeapIndices);
+            int distance = Distance(x,y);
+            distances.Add(new int[] {x, y, distance});
         }
+        distances.Sort((a,b) => a[2].CompareTo(b[2]));
 
-        return BuildPointsFromIndices(maxHeapIndices, points, k);
-
-        
-
-
-        
-        
-    }
-
-    private double Distance(int x, int y) {
-        return (double) Math.Sqrt(x*x + y*y);
-    }
-
-    private void AddAndStoreMax(PriorityQueue<int, double> maxHeapIndices, int i, double distance) {
-        maxHeapIndices.Enqueue(i, -distance);
-    }
-
-    private int RemoveMax(PriorityQueue<int, double> maxHeapIndices) {
-
-        return maxHeapIndices.Dequeue();
-    }
-
-    private int[][] BuildPointsFromIndices(PriorityQueue<int, double> maxHeapIndices, int[][] points, int k) {
-        int[][] closestPoints = new int[k][];
-        for (int i=0; i<closestPoints.Length; i++) {
-            int index = RemoveMax(maxHeapIndices);
-            int x = points[index][0];
-            int y = points[index][1];
-            closestPoints[i] = new int[2] {x,y} ;
+        PrintDistances(distances);
+        int[][] kClosest = new int[k][];
+        for (int i=0; i<kClosest.Length; i++) {
+            int x = distances[i][0];
+            int y = distances[i][1];
+            kClosest[i] = new int[] {x,y};
         }
-        return closestPoints;
+        return kClosest;
     }
 
-    private void PrintHeap(PriorityQueue<int, double> pq) {
-        foreach (var item in pq.UnorderedItems)
-            Console.Write(item.Element + " ");
-        Console.WriteLine();
+    static int Distance(int x, int y) {
+        return  x*x + y*y;
+    }
+
+    static void PrintDistances(List<int[]> distances) {
+        foreach (int[] distanceGroup in distances) {
+            Console.WriteLine(string.Join(",", distanceGroup));
+        }
     }
 }
