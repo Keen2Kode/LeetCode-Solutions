@@ -14,36 +14,45 @@ public class Solution {
         //           ^   
 
         // build list of letter and digit logs
-        List<string> letterLogs = new();
+        List<string[]> letterLogs = new();
         List<string> digitLogs = new();
         foreach (string log in logs) {
             if (IsLetterLog(log)) {
-                letterLogs.Add(log);
+                letterLogs.Add(LetterData(log));
             } else {
                 digitLogs.Add(log);
             }
         }
 
         letterLogs.Sort((a,b) => CompareLetterLogs(a,b));
-        List<string> finalLogs = letterLogs.Concat(digitLogs).ToList();
+        List<string> finalLogs = new();
+        foreach (string[] letterData in letterLogs) {
+            finalLogs.Add(letterData[0] + " " + letterData[1]);
+        }
+        
 
-        return finalLogs.ToArray();
+        return finalLogs.Concat(digitLogs).ToArray();
         
     }
-    private static int CompareLetterLogs(string a, string b) {
-        // Console.WriteLine($"Comparing a: {a}, to b: {b}");
-        string[] arrayA = a.Split(" ", 2);
-        string[] arrayB = b.Split(" ", 2);
+    private static int CompareLetterLogs(string[] a, string[] b) {
+        // Console.WriteLine($"Comparing a: {string.Join(",", a)} to b: {string.Join(",", b)}");
         
-        string idA = arrayA[0];
-        string idB = arrayB[0];
-        string contentA = arrayA[1];
-        string contentB = arrayB[1];
+        string idA = a[0];
+        string idB = b[0];
+        string contentA = a[1];
+        string contentB = b[1];
 
         if (contentA.CompareTo(contentB) != 0) 
             return contentA.CompareTo(contentB);
         return idA.CompareTo(idB);
 
+    }
+
+    private static string[] LetterData (string log) {
+        string[] array = log.Split(" ", 2);
+        string id = array[0];
+        string content = array[1];
+        return new string[] {id, content};
     }
 
     // the last letter is the best tell (the identifier is unpredictable)
