@@ -8,12 +8,16 @@ public class Solution {
         // group digit and letter logs
         // unclear identifier, use 2nd word
 
+
+        // "let1 art can"
+        // "let3 art zero"
+        //           ^   
+
         // build list of letter and digit logs
         List<string> letterLogs = new();
         List<string> digitLogs = new();
         foreach (string log in logs) {
-            string word2 = log.Split(" ")[1];
-            if (IsLetterLog(word2)) {
+            if (IsLetterLog(log)) {
                 letterLogs.Add(log);
             } else {
                 digitLogs.Add(log);
@@ -42,11 +46,9 @@ public class Solution {
 
     }
 
-    private static bool IsLetterLog(string word2) {
-        foreach (char c in word2) {
-            if (char.IsLower(c))
-                return true;
-        }
-        return false;
+    // the last letter is the best tell (the identifier is unpredictable)
+    private static bool IsLetterLog(string log) {
+        char last = log[log.Length-1];
+        return char.IsLower(last);
     }
 }
