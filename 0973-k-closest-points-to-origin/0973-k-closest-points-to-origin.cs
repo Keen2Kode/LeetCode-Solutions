@@ -20,7 +20,7 @@ public class Solution {
         }
         distances.Sort((a,b) => a[2].CompareTo(b[2]));
 
-        PrintDistances(distances);
+        // PrintDistances(distances);
         int[][] kClosest = new int[k][];
         for (int i=0; i<kClosest.Length; i++) {
             int x = distances[i][0];
