@@ -44,6 +44,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0211-design-add-and-search-words-data-structure](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0211-design-add-and-search-words-data-structure) |
 | [0212-word-search-ii](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0212-word-search-ii) |
 | [0257-binary-tree-paths](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0257-binary-tree-paths) |
+| [0438-find-all-anagrams-in-a-string](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0438-find-all-anagrams-in-a-string) |
 | [0680-valid-palindrome-ii](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0680-valid-palindrome-ii) |
 | [0763-partition-labels](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0763-partition-labels) |
 | [0937-reorder-data-in-log-files](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0937-reorder-data-in-log-files) |
@@ -116,6 +117,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0049-group-anagrams](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0049-group-anagrams) |
 | [0202-happy-number](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0202-happy-number) |
 | [0208-implement-trie-prefix-tree](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0208-implement-trie-prefix-tree) |
+| [0438-find-all-anagrams-in-a-string](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0438-find-all-anagrams-in-a-string) |
 | [0448-find-all-numbers-disappeared-in-an-array](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0448-find-all-numbers-disappeared-in-an-array) |
 | [0645-set-mismatch](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0645-set-mismatch) |
 | [0763-partition-labels](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0763-partition-labels) |
@@ -194,6 +196,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0209-minimum-size-subarray-sum](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0209-minimum-size-subarray-sum) |
+| [0438-find-all-anagrams-in-a-string](https://github.com/Keen2Kode/LeetCode-Solutions/tree/master/0438-find-all-anagrams-in-a-string) |
 ## Prefix Sum
 |  |
 | ------- |
